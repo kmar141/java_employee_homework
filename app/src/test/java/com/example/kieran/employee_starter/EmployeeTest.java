@@ -29,4 +29,15 @@ public class EmployeeTest{
     public void testEmployeeSalary(){
         assertEquals(13337, employee.getSalary(), 0.01);
     }
+
+    @Test
+    public void testSalaryIncrease(){
+        assertEquals(14337, employee.raiseSalary(1000), 0.01);
+    }
+
+    @Test
+    public void testSetName(){
+        employee.setName("Mick");
+        assertEquals("Mick", employee.getName());
+    }
 }
